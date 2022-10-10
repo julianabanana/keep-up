@@ -1,6 +1,6 @@
-# keep-up
+# move-on
 Proyecto estructuras de datos\
-Keep up! app de entrenamiento\
+Move on! app de entrenamiento\
 Jauri Esteban Cortes Cardenas
 jcortesca@unal.edu.co\
 Juan Esteban Maecha Trujillo
