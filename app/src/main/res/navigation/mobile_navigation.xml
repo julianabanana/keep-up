@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.trackingforgym.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_menu"
+        android:name="com.example.trackingforgym.ui.menu.MenuFragment"
+        android:label="@string/menu_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_nav_menu_to_fragment_actualizar_perfil"
+            app:destination="@id/fragment_actualizar_perfil" />
+        <action
+            android:id="@+id/action_nav_menu_to_fragment_calculo_rm"
+            app:destination="@id/fragment_calculo_rm" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_stats"
+        android:name="com.example.trackingforgym.ui.stats.StatsFragment"
+        android:label="@string/menu_stats"
+        tools:layout="@layout/fragment_stats" >
+        <action
+            android:id="@+id/action_nav_stats_to_fragment_progreso_por_ejercicio"
+            app:destination="@id/fragment_progreso_por_ejercicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_historic"
+        android:name="com.example.trackingforgym.ui.fragment_historic"
+        android:label="Historial"
+        tools:layout="@layout/fragment_historic" >
+        <action
+            android:id="@+id/action_nav_historic_to_fragment_historial_rutina"
+            app:destination="@id/fragment_historial_rutina" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_registro_por_rutina_creada"
+        android:name="com.example.trackingforgym.ui.fragment_registro_por_rutina_creada"
+        android:label="Registro Rutina"
+        tools:layout="@layout/fragment_registro_por_rutina_creada" />
+    <fragment
+        android:id="@+id/fragment_registro_por_ejercicio"
+        android:name="com.example.trackingforgym.ui.fragment_registro_por_ejercicio"
+        android:label="fragment_registro_por_ejercicio"
+        tools:layout="@layout/fragment_registro_por_ejercicio" />
+    <fragment
+        android:id="@+id/fragment_creacion_rutina"
+        android:name="com.example.trackingforgym.ui.fragment_creacion_rutina"
+        android:label="fragment_creacion_rutina"
+        tools:layout="@layout/fragment_creacion_rutina" />
+    <fragment
+        android:id="@+id/fragment_creacion_ejercicio"
+        android:name="com.example.trackingforgym.ui.fragment_creacion_ejercicio"
+        android:label="fragment_creacion_ejercicio"
+        tools:layout="@layout/fragment_creacion_ejercicio" />
+    <fragment
+        android:id="@+id/fragment_historial_rutina"
+        android:name="com.example.trackingforgym.ui.fragment_historial_rutina"
+        android:label="fragment_historial_rutina"
+        tools:layout="@layout/fragment_historial_rutina" />
+    <fragment
+        android:id="@+id/fragment_progreso_por_ejercicio"
+        android:name="com.example.trackingforgym.ui.fragment_progreso_por_ejercicio"
+        android:label="fragment_progreso_por_ejercicio"
+        tools:layout="@layout/fragment_progreso_por_ejercicio" >
+        <action
+            android:id="@+id/action_fragment_progreso_por_ejercicio_to_fragment_ejercicios_fav"
+            app:destination="@id/fragment_ejercicios_fav" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_ejercicios_fav"
+        android:name="com.example.trackingforgym.ui.fragment_ejercicios_fav"
+        android:label="fragment_ejercicios_fav"
+        tools:layout="@layout/fragment_ejercicios_fav" />
+    <fragment
+        android:id="@+id/fragment_actualizar_perfil"
+        android:name="com.example.trackingforgym.ui.fragment_actualizar_perfil"
+        android:label="fragment_actualizar_perfil"
+        tools:layout="@layout/fragment_actualizar_perfil" />
+    <fragment
+        android:id="@+id/fragment_calculo_rm"
+        android:name="com.example.trackingforgym.ui.fragment_calculo_rm"
+        android:label="Calculo RM"
+        tools:layout="@layout/fragment_calculo_rm" />
+    <action
+        android:id="@+id/action_global_nav_home"
+        app:destination="@id/nav_home"
+        app:popUpTo="@id/fragment_creacion_rutina" />
+
+</navigation>

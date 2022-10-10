@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment_creacion_ejercicio">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:text="CREAR EJERCICIO"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/registro_nombre_titulo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/registro_nombre3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/registro_nombre_titulo3"
+            android:layout_width="116dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="56dp"
+            android:text="Parte del cuerpo"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editTextParteCuerpo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnElegirColor"
+                android:layout_width="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Elegir Color" />
+
+            <View
+                android:id="@+id/preview_selected_color"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubirEjercicio"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crear" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DescriptionActivity">
+
+    <EditText
+        android:id="@+id/peso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/statusDescriptionTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="-23dp"
+        android:layout_marginEnd="103dp"
+        android:contentDescription="Peso"
+        android:ems="10"
+        android:hint="Peso"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/titleDescriptionTextView"
+        android:layout_width="408dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="0dp"
+        android:text="Descripción"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cityDescriptionTextView"
+        android:layout_width="17dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/titleDescriptionTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="311dp"
+        android:text="Ciudad"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/statusDescriptionTextView"
+        android:layout_width="6dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/cityDescriptionTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="265dp"
+        android:text="Status"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Num_repeticiones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/peso"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="102dp"
+        android:ems="10"
+        android:hint="Numero de repeticiones"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/RM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Num_repeticiones"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="104dp"
+        android:ems="10"
+        android:hint="RIR"
+        android:inputType="number" />
+
+    <SeekBar
+        android:id="@+id/RPE"
+        android:layout_width="143dp"
+        android:layout_height="29dp"
+        android:layout_below="@+id/textView17"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="174dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RM"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="179dp"
+        android:text="RPE" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="234dp"
+        android:layout_height="22dp"
+        android:layout_below="@+id/RPE"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="88dp"
+        android:text="Buen manejo del tiempo." />
+
+    <Button
+        android:id="@+id/btnAgregarEjercicioEntrenamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="165dp"
+        android:text="Guardar ejercicio" />
+
+</RelativeLayout>
